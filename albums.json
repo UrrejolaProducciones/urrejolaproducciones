@@ -1,0 +1,11 @@
+{
+  "albums": [
+    {
+      "slug": "ejemplo-0702263",
+      "title": "Matrimonio – Ejemplo",
+      "date": "2026-02-07",
+      "cover": "albums/ejemplo-0702263/images/cover.jpg",
+      "pin_hint": "Fecha de matrimonio sin separadores (ddmmaaa?)"
+    }
+  ]
+}

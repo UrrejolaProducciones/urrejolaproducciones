@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería | Andrea Urrejola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="brand">Andrea Urrejola</div>
+    <nav><a class="muted" href="./">Inicio</a></nav>
+  </header>
+
+  <main class="container">
+    <div id="pinView" class="pin-gate">
+      <h2 style="font-family: 'Playfair Display', serif; margin:0">Acceso con PIN</h2>
+      <p class="muted" id="pinHint">Ingresa el PIN para ver la galería.</p>
+      <input type="password" id="pinInput" placeholder="PIN" autocomplete="one-time-code" />
+      <button class="btn" id="pinBtn">Acceder</button>
+      <p class="muted" style="font-size:12px">Sugerencia: comparte el enlace + PIN con tus invitados.</p>
+    </div>
+
+    <div id="galleryView" style="display:none">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px">
+        <h2 style="font-family: 'Playfair Display', serif; margin:0" id="albumTitle"></h2>
+        <a class="btn alt" id="downloadAll" target="_blank" rel="noopener">Descargar todo (ZIP)</a>
+      </div>
+      <p class="muted" id="albumMeta"></p>
+      <div class="grid" id="grid"></div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Andrea Urrejola · urrejolaproducciones
+  </footer>
+
+  <script src="assets/js/pin.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

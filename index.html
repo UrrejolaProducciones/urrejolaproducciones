@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrega | Andrea Urrejola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="brand">Andrea Urrejola</div>
+    <nav><a class="muted" href="./">Entregas</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Tu galería está lista ✨</h1>
+        <p class="muted">Previsualiza, ingresa el PIN y descarga todas las fotos en alta calidad.</p>
+        <div style="margin-top:16px">
+          <a class="btn" href="gallery.html">Ver galería</a>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2 style="font-family: 'Playfair Display', serif; margin-bottom:8px">Matrimonio – Ejemplo</h2>
+      <p class="muted">07 de febrero de 2026 · PIN requerido</p>
+      <p>Consejo: comparte este enlace con familiares y amigos junto al PIN.</p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Andrea Urrejola · urrejolaproducciones
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
